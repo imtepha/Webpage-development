@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<input type="grade" id="input" value="3"/>
+<script >
+function myfunction () {
+	// body...
+	var x = document.getElementById("input").value; 
+    var greeting;
+    if (x< 60) {
+        greeting = "your score is below 60 (you dont passed)";
+    } else {
+        greeting = "you pass the test";
+    }
+    document.getElementById("output").innerHTML = greeting;
+}
+</script>
+
+<br></br>
+<button onclick = "myfunction()">function</button>
+<br></br>
+<output type="word" id="output"></output>

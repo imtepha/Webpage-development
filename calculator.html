@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<input type="number" id="input" value="3"/>
+<br></br>
+<input type="number" id="input2" value="3"/>
+
+
+<script>
+
+
+function plus () {
+   var x,y,z,x1,y1;
+   x= document.getElementById("input").value;
+   y= document.getElementById("input2").value;
+   x1=parseInt(x);
+   y1=parseInt(y);
+   z= x1+y1;
+   document.getElementById("output").innerHTML = z;
+} 
+
+function multiply () {
+  var x,y,z,x1,y1;
+   x= document.getElementById("input").value;
+   y= document.getElementById("input2").value;
+   x1=parseInt(x);
+   y1=parseInt(y);
+   z= x1*y1;
+   document.getElementById("output2").innerHTML = z; 
+} 
+function divided () {
+   var x,y,z,x1,y1;
+   x= document.getElementById("input").value;
+   y= document.getElementById("input2").value;
+   x1=parseInt(x);
+   y1=parseInt(y);
+   z= x1 / y1;
+   document.getElementById("output3").innerHTML = z;
+   
+}
+function substract () {
+  var x,y,z,x1,y1;
+   x= document.getElementById("input").value;
+   y= document.getElementById("input2").value;
+   x1=parseInt(x);
+   y1=parseInt(y);
+   z= x1 - y1;
+   document.getElementById("output4").innerHTML = z;
+   
+}
+
+function clearThis(){
+ 
+    document.getElementById("input").value =0;
+    document.getElementById("input2").value = 0;
+    document.getElementById("output5").innerHTML = 0;
+   
+    }
+
+
+</script>
+<br></br>
+<output type="number" id="output"></output>
+<br></br>
+<button onclick = "plus()">+</button>
+<br></br>
+<output type="number" id="output2"></output>
+<br></br>
+<button onclick = "multiply()">*</button>
+<br></br>
+<output type="number" id="output3"></output>
+<br></br>
+<button onclick = "divided()">/</button>
+<br></br>
+<output type="number" id="output4"></output>
+<br></br>
+<button onclick = "substract()">-</button>
+<br></br>
+<output type="number" id="output5"></output>
+<br></br>
+<button onclick = "clearThis()">c</button>
+<br></br>
+<output type="number" id="output5"></output>
+
+
+</body>
+</html>
+
+
